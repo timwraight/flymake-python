@@ -106,7 +106,7 @@ class PylintRunner(LintRunner):
         r'\s*\[(?P<error_type>[WECR])(?P<error_number>[^\]]+)]'
         r'\s*(?P<description>.*)$')
 
-    command = 'pylint'
+    command = 'django-lint'
 
     sane_default_ignore_codes = set([
         "C0103",  # Naming convention
